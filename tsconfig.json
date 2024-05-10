@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["json5", "prop-types", "semver"],
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
