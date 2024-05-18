@@ -1,13 +1,14 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+// eslint-disable-next-line camelcase
+import { EB_Garamond } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/styles/theme-provider'
 import StarsCanvas from '@/components/star-background'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = EB_Garamond({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Create my portifolio',
+  title: 'Artesano web',
   description: 'web artesano',
 }
 
@@ -17,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="antialiased">
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -25,8 +26,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <StarsCanvas />
-          {children}
+          <main>
+            <StarsCanvas />
+            {children}
+          </main>
         </ThemeProvider>
       </body>
     </html>

@@ -1,11 +1,18 @@
 import Header from '@/components/header-nav'
+import { SectionHeadline } from '@/components/section-headline'
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col antialiased">
+    <div className="flex flex-col max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
       <Header />
 
-      <div className="flex flex-1 flex-col gap-4 p-8 pt-6"></div>
+      <SectionHeadline />
+
+      <article className="w-full bg-slate-50">
+        <section>
+          <h1>salve</h1>
+        </section>
+      </article>
     </div>
   )
 }

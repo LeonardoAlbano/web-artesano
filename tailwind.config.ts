@@ -18,6 +18,10 @@ const config = {
       },
     },
     extend: {
+      gridTemplateColumns: {
+        headline: '650px 1fr',
+      },
+
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

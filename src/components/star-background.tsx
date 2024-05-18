@@ -31,7 +31,7 @@ function StarBackground({ theme = 'light', ...props }: StarBackgroundProps) {
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
-          color={currentTheme === 'light' ? '#000' : '#fff'}
+          color={currentTheme === 'light' ? '#60179c' : '#48a8e7'}
           size={0.002}
           sizeAttenuation={true}
           dethWrite={false}
